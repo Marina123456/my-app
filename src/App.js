@@ -9,7 +9,7 @@ function App() {
   }
   return (    
     <a-scene>
-        
+        <a-entity id="camera1" camera cursor="rayOrigin: mouse"></a-entity>
         <a-plane position="6 -1 -5" color="green" width="1.1" height="1.1" rotation="-10 -40 0" onClick={(event) => alert("sjhsj")}></a-plane>
         <a-assets>
             <img id="sky" src='./img.png' />
