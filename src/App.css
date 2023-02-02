@@ -1,4 +1,58 @@
-.Popup1 {
+
+.Audio {
   position:absolute;
   z-index: 1000;
+  left: 90%;
+  height: 12%;
+  width: 12%;
+  
+}
+
+.Pause{
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+  height: 12%;
+  width: 12%;
+}
+
+.fixed-overlay {
+  position:absolute;
+  z-index: 1000;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -275px;
+  margin-top: -275px;
+}
+
+.modal_container {
+  background-color: #fff;
+  width: 620px;
+  height: 550px;
+}
+
+.close{
+  position: absolute;
+  right: 0;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.Name{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-top: 93px;
+  margin-right: -32px;
+  
 }
