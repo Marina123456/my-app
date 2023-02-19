@@ -1,16 +1,31 @@
 
 .Audio {
-  position:absolute;
-  z-index: 1000;
+  position: absolute;
+  z-index: 900;
   left: 90%;
   height: 12%;
   width: 12%;
-  
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.modal_container {
+  position: fixed;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
 }
 
 .Pause{
+  position: fixed;
   position: absolute;
-  z-index: 1000;
+  z-index: 900;
   left: 50%;
   height: 12%;
   width: 12%;
@@ -31,15 +46,76 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -275px;
-  margin-top: -275px;
+  margin-left: -340px;
+  margin-top: -340px;
+  
 }
+
 
 .modal_container {
   background-color: #fff;
-  width: 620px;
-  height: 550px;
+  width: 720px;
+  height: 650px;
+
 }
+.Text {
+  position: absolute;
+  width: 92%;
+  right: 2%;
+  top: 71%;
+  text-indent: 30px;
+  text-align: justify;
+  font-family: inherit;
+
+}
+.Name{
+  position: absolute;
+  top: 54%;
+  right: 48%;
+  margin-top: 93px;
+  margin-right: -32px;
+  font-family: 'Myriad Pro Semibold Italic';
+  font-size: 1.2em;
+}
+@media (max-width: 700px) and (min-width: 300px) {
+  .Audio {
+    position: absolute;
+    z-index: 900;
+    left: 80%;
+  }
+  .modal {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    margin-left: -5px;
+    margin-top: -5px;
+    
+  }
+  .modal_container {
+    background-color: #fff;
+    width: 90%;
+    
+  
+  }
+  .Text {
+    
+    width: 92%;
+    right: 2%;
+    
+    text-indent: 30px;
+    text-align: justify;
+    font-family: inherit;
+  
+  }
+  .Name{
+    
+    right: 48%;
+    margin-top: 93px;
+    margin-right: -32px;
+    font-family: 'Myriad Pro Semibold Italic';
+    font-size: 1.2em;
+  }
+  }
 
 .close{
   position: absolute;
@@ -48,11 +124,8 @@
   margin-top: 5px;
 }
 
-.Name{
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  margin-top: 93px;
-  margin-right: -32px;
-  
-}
+
+
+
+
+
